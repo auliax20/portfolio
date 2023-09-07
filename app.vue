@@ -1,11 +1,17 @@
 <template>
-  <div class="glitch">
-    <h1 class="glitch__title">Aulia Ulkhairi</h1>
-    <h3 class="glitch_sub_title">Web Developer</h3>
-    <ul class="menu">
-      <li class="menu__item"><NuxtLink to="/profile">Profile</NuxtLink></li>
-      <li class="menu__item"><NuxtLink to="/portfolio">Portfolio</NuxtLink></li>
-      <li class="menu__item"><NuxtLink to="/skills">Skills</NuxtLink></li>
-    </ul>
+  <div>
+    <NuxtPage />
   </div>
 </template>
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>
